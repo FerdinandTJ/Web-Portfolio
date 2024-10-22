@@ -1,18 +1,20 @@
-/* General styling for sections with rounded corners and soft shadow */
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   border: 1px solid rgba(0, 0, 0, 0.1); 
   border-radius: 20px;                   
-  padding: 20px;                        
+  padding: 70px;                        
   margin: 10px 0;                        
   background-color: #fff;             
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-content: center;
 }
 
 section h2, section p {
   text-align: center;
 }
-
-/* CSS Styling */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -91,15 +93,31 @@ nav a:hover {
 }
 #media {
   background-color: #f4f4f4;
-  padding: 80px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  float: inline-start;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  object-fit: cover; 
+  justify-content: center;
+}
+
+
 audio,
 video {
-  margin: 1px 0;
-  border: 2px solid #333;
+  margin: px 0;
+  border: 1px solid #333;
 }
+
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -301,7 +319,7 @@ ul li {
 #feedback {
   background-color: #f9f9f9;
   padding: 40px 20px;
-  margin-top: 40px;
+
 }
 
 form {

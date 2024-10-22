@@ -13,7 +13,7 @@
 
   <!-- Navigation -->
   <nav>
-    <a href="#about">About Me</a>
+    <a href="#aboutme">About Me</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#feedback">Feedback</a>
@@ -34,22 +34,28 @@
   </header>
 
   <!-- About me Section -->
-  <section>
+  <section id="aboutme">
     <h2>About Me</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo officiis soluta, excepturi ipsum vero
-      libero? Aspernatur, nostrum iusto exercitationem cum, eum, sed quidem reiciendis quisquam eos labore sunt fuga.
+    <img src="Foto.jpg" alt="Profile" class="profile-pic">
+    <p>Hi, I'm Ferdinand TJ, a 5th-semester Computer Science student at Universitas Pertamina. I have a deep passion for
+      technology and programming, constantly exploring new tools and languages to expand my skills. My expertise
+      includes languages like Java, Python, C, and C++, and I’m currently delving deeper into web development. With a
+      keen interest in problem-solving and software engineering, I’ve worked on various projects, from desktop
+      applications to web solutions. I’m always eager to take on new challenges and grow both personally and
+      professionally in the tech industry.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus autem neque voluptatibus alias, beatae nostrum omnis odit, laudantium temporibus repudiandae quasi facere, architecto unde! Fugit eligendi dolorum eos adipisci ex?
     </p>
-
   </section>
+
 
   <!-- Audio and Video Section -->
   <section id="media">
     <h2>Audio & Video</h2>
-    <p>Listen to my voice recording or watch my video introduction below:</p>
+    <p>Listen to the song below :</p>
 
     <!-- Audio Player -->
     <div class="media-content">
-      <h3>Audio Introduction</h3>
+      <h3>Audio</h3>
       <audio controls>
         <source src="Different Heaven - Safe And Sound _ House _ NCS - Copyright Free Music.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -58,9 +64,9 @@
 
     <!-- Video Player -->
     <div class="media-content">
-      <h3>Video Introduction</h3>
-      <video width="320" height="240" controls>
-        <source src="video-introduction.mp4" type="video/mp4">
+      <h3>Video</h3>
+      <video width="320" height="180" controls>
+        <source src="different-heaven-safe-and-sound-house-ncs-copyright-free-music-ytshorts.savetube.me.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -68,7 +74,7 @@
 
   <!-- Background Music (Hidden Player) -->
   <audio id="background-music" autoplay loop>
-    <source src="background-sound.mp3" type="audio/mpeg">
+    <source src="Fashion Stylish Retro Pop by Infraction No Copyright Music  Catwalk Queen.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
@@ -132,7 +138,7 @@
 
   <!-- Feedback Form Section -->
   <section id="feedback">
-    <h2>Berikan Feedback</h2>
+    <h2>Feedback</h2>
     <form action="/submit-feedback" method="post">
       <label for="name">Nama:</label>
       <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required><br><br>
