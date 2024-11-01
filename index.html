@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferdinand TJ's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#aboutme">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#feedback">Feedback</a>
+    <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="header-content">
+      <h1>I'm Ferdinand</h1>
+      <h2>Web Developer & Software Enthusiast</h2>
+      <p>Passionate about building engaging, dynamic websites using modern technologies.</p>
+      <div class="header-links">
+        <a href="http://github.com/FerdinandTJ" target="_blank" class="btn">GitHub</a>
+        <a href="http://linkedin.com/in/ferdinandtj" target="_blank" class="btn">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About me Section -->
+  <section id="aboutme">
+    <h2>About Me</h2>
+    <img src="Images/Foto.jpg" alt="Profile" class="profile-pic">
+    <p>Hi, I'm Ferdinand TJ, a 5th-semester Computer Science student at Universitas Pertamina. I have a deep passion for
+      technology and programming, constantly exploring new tools and languages to expand my skills. My expertise
+      includes languages like Java, Python, C, and C++, and I’m currently delving deeper into web development. With a
+      keen interest in problem-solving and software engineering, I’ve worked on various projects, from desktop
+      applications to web solutions. I’m always eager to take on new challenges and grow both personally and
+      professionally in the tech industry.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus autem neque voluptatibus alias, beatae nostrum
+      omnis odit, laudantium temporibus repudiandae quasi facere, architecto unde! Fugit eligendi dolorum eos adipisci
+      ex?
+    </p>
+  </section>
+
+
+  <!-- Audio and Video Section -->
+  <section id="media">
+    <h2>Audio & Video</h2>
+    <p>Listen to the song below :</p>
+
+    <!-- Audio Player -->
+    <div class="media-content">
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="Sound/Different Heaven - Safe And Sound _ House _ NCS - Copyright Free Music.mp3"
+          type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <!-- Video Player -->
+    <div class="media-content">
+      <h3>Video</h3>
+      <video width="320" height="180" controls>
+        <source src="Vids/different-heaven-safe-and-sound-house-ncs-copyright-free-music-ytshorts.savetube.me.mp4"
+          type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Background Music (Hidden Player) -->
+  <audio id="background-music" autoplay loop>
+    <source src="Sound/Fashion Stylish Retro Pop by Infraction No Copyright Music  Catwalk Queen.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-item">
+      <img src="Images/html_logo.png" alt="HTML Logo" class="skill-icon">
+      <div class="skill-info">
+        <h3>HTML</h3>
+        <div class="skill-bar">
+          <div class="skill-level html">90%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <img src="Images/css_logo.png" alt="CSS Logo" class="skill-icon">
+      <div class="skill-info">
+        <h3>CSS</h3>
+        <div class="skill-bar">
+          <div class="skill-level css">80%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <img src="Images/js_logo.png" alt="JavaScript Logo" class="skill-icon">
+      <div class="skill-info">
+        <h3>JavaScript</h3>
+        <div class="skill-bar">
+          <div class="skill-level js">70%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <a href="https://github.com/FerdinandTJ/Web-Portfolio" target="_blank" class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A simple, static website built using only HTML.</p>
+      </a>
+      <a href="https://github.com/FerdinandTJ/UPartnerApp" target="_blank" class="project-card">
+        <h3>UPartner App</h3>
+        <p>A Java-based GUI application for managing projects in Universitas Pertamina.</p>
+      </a>
+      <div class="project-card">
+        <h3>Blog Website</h3>
+        <p>A dynamic website built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Inventory Management System</h3>
+        <p>A Python-based GUI application for managing mobile phone inventory.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Form Section -->
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <form id="feedbackForm">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+      <p id="nameError" class="error-message"></p><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+      <p id="emailError" class="error-message"></p><br>
+
+      <label for="phone">Nomor HP:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor HP Anda" required pattern="^\d{10,15}$">
+      <p id="phoneError" class="error-message"></p><br>
+
+      <label for="message">Pesan:</label><br>
+      <textarea id="message" name="message" rows="5" placeholder="Tulis pesan atau feedback Anda..." required></textarea>
+      <p id="messageError" class="error-message"></p><br>
+
+      <p><input type="button" value="Kirim" onclick="validateAndSend()"></p>
+    </form>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Ferdinand TJ | <a href="mailto:ferdinandtj4@gmail.com">Contact Me</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
