@@ -1,3 +1,4 @@
+// Validate Form
 function validateAndSend() {
 
   const name = document.getElementById("name").value;
