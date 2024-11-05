@@ -80,12 +80,12 @@ nav a:hover::after {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* .header-content h2 {
+.header-content h2 {
   font-size: 2em;
   margin: 10px 0 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   animation: slideInFromRight 1s ease-out;
-} */
+}
 
 .header-content p {
   font-size: 1.3em;
